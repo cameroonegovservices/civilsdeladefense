@@ -54,13 +54,8 @@ gem 'redis'
 
 gem 'clockwork' # needed for staging on Scalingo
 
-# Use Capistrano for deployment
 group :development do
   gem 'letter_opener'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-passenger'
-  gem 'capistrano-db-tasks', require: false
 end
 
 group :development, :test do
